@@ -1,0 +1,6 @@
+{
+  "dotnet.defaultSolution": "booker.slnx",
+  "chat.tools.terminal.autoApprove": {
+    "dotnet build": true
+  }
+}

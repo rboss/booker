@@ -1,0 +1,49 @@
+@booker.api_HostAddress = http://localhost:5152
+
+GET {{booker.api_HostAddress}}/books
+Accept: application/json
+
+###
+
+GET {{booker.api_HostAddress}}/books/9780441478125
+Accept: application/json
+
+###
+
+GET {{booker.api_HostAddress}}/books/0000000000000
+Accept: application/json
+
+###
+
+GET {{booker.api_HostAddress}}/books/9780441478125/history
+Accept: application/json
+
+###
+
+GET {{booker.api_HostAddress}}/books/9780441478125/stats
+Accept: application/json
+
+###
+
+GET {{booker.api_HostAddress}}/members/Ada/history
+Accept: application/json
+
+###
+
+POST {{booker.api_HostAddress}}/books/copies/20000000-0000-0000-0000-000000000001/loan
+Content-Type: application/json
+
+{
+	"memberId": "member-123"
+}
+
+###
+
+POST {{booker.api_HostAddress}}/books/copies/20000000-0000-0000-0000-000000000001/return
+Content-Type: application/json
+
+{
+	"memberId": "member-123"
+}
+
+###
